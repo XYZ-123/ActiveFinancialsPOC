@@ -18,9 +18,7 @@ var config = _.merge({
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
-    new BowerWebpackPlugin({
-      searchResolveModulesDirectories: false
-    })
+    new BowerWebpackPlugin({searchResolveModulesDirectories:false})
   ]
 }, baseConfig);
 
